@@ -1,10 +1,32 @@
 <%# Page %>
-<div class="flex flex-row md:flex-column">
+<div class="flex flex-row md:flex-column h-screen bg-black">
   <%# Left side %>
-  <div>
+  <div class="text-primary m-10 space-y-2 flex flex-col justify-between">
+    <div>
+      <div class="text-3xl font-alt text-primary"><span>VIDA DO LIVRO</span> <span>apresenta</span> </div>
+      <%= image_tag  'masterclass-inedita.png', class:'w-1/3'%>
+    </div>
+
+    <div>
+      <h1 class="font-nb text-8xl pt-3 w-1/2 leading-none">O Futuro do Livro</h1>
+      <h2 class="font-nb text-4xl pt-3 w-1/2 leading-tight pr-10">A revolução digital no mundo das publicações</h2>
+    </div>
+
+    <p class="font-nb text-2xl font-thin text-secondary leading-tight w-1/2 justify-self-end">com <strong>John B. Thompson</strong>,</br>
+    um dos maiores especialistas em mercado
+    editorial do mundo, professor da Universidade
+    de Cambridge e autor dos livros Mercadores
+    de cultura e As guerras do livro.</p>
   </div>
 
   <%# Right side %>
-  <div>
+  <div class="bg-primary flex flex-col px-10 pt-10 space-y-2">
+
+    <h3 class="font-nb text-3xl tracking-wide w-80 text-center mb-4">Inscreva-se para liberar o acesso</h3>
+    <input type="text" placeholder="Nome" class="border border-black rounded-2xl py-2 px-4 bg-transparent text-black font-extralight">
+    <input type="text" placeholder="Email" class="border border-black rounded-2xl py-2 px-4 bg-transparent text-black font-extralight">
+    <button class="text-nb text-primary text-center bg-black py-3 px-4 rounded-2xl">ASSISTIR AGORA</button>
+    <%= image_tag 'john.png' %>
+
   </div>
 </div>
