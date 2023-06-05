@@ -1,0 +1,16 @@
+   <% if notice %>
+  <div class="bg-blue-100 text-blue-900 border-l-4 border-blue-500 p-4 my-1" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= notice %>
+  </div>
+<% end %>
+<% if alert %>
+  <div class="bg-yellow-100 text-yellow-900 border-l-4 border-yellow-500 p-4 my-1" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= alert %>
+  </div>
+<% end %>
