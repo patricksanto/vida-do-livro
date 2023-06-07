@@ -1,15 +1,14 @@
 <%# Page %>
-<div class="flex flex-row md:flex-column h-screen bg-black">
-  <%# Left side %>
-  <div class="text-primary m-10 space-y-2 flex flex-col justify-between">
-    <div>
-      <div class="text-3xl font-alt text-primary"><span>VIDA DO LIVRO</span> <span>apresenta</span> </div>
-      <%= image_tag  'masterclass-inedita.png', class:'w-1/3'%>
-    </div>
+<div class="flex flex-col md:flex-row h-screen bg-black ">
 
+  <%# Left side %>
+  <div class="text-primary m-10 space-y-2 flex flex-col justify-between w-3/5">
     <div>
-      <h1 class="font-nb text-8xl pt-3 w-1/2 leading-none">O Futuro do Livro</h1>
-      <h2 class="font-nb text-4xl pt-3 w-1/2 leading-tight pr-10">A revolução digital no mundo das publicações</h2>
+      <div class="text-3xl font-alt text-secondary ml-2 mb-2"><span>VIDA DO LIVRO</span> <span>apresenta</span> </div>
+      <%= image_tag  'masterclass-inedita.png', class:'w-2/5 mb-2'%>
+
+      <h1 class="font-nb text-8xl pt-3 w-1/2 leading-[5rem]">O Futuro do Livro</h1>
+      <h2 class="font-nb text-4xl pt-3 w-3/5 leading-tight pr-10">A revolução digital no mundo das publicações</h2>
     </div>
 
     <p class="font-nb text-2xl font-thin text-secondary leading-tight w-1/2 justify-self-end">com <strong>John B. Thompson</strong>,</br>
@@ -20,13 +19,17 @@
   </div>
 
   <%# Right side %>
-  <div class="bg-primary flex flex-col px-10 pt-10 space-y-2">
+  <div class="bg-primary flex flex-col px-10 pt-10 space-y-2 justify-between w-2/5">
 
-    <h3 class="font-nb text-3xl tracking-wide w-80 text-center mb-4">Inscreva-se para liberar o acesso</h3>
-    <input type="text" placeholder="Nome" class="border border-black rounded-2xl py-2 px-4 bg-transparent text-black font-extralight">
-    <input type="text" placeholder="Email" class="border border-black rounded-2xl py-2 px-4 bg-transparent text-black font-extralight">
-    <button class="text-nb text-primary text-center bg-black py-3 px-4 rounded-2xl">ASSISTIR AGORA</button>
+    <div class="flex flex-col space-y-2">
+      <h3 class="font-nb text-3xl tracking-wide w-80 text-center mb-4 self-center">Inscreva-se para liberar o acesso</h3>
+      <input type="text" placeholder="Nome" class="border border-black rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black w-100 flex-1">
+      <input type="text" placeholder="Email" class="border border-black rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black">
+      <button class="text-nb text-primary text-center bg-black py-5 px-4 rounded-3xl hover:bg-stone-800 transition-all hover:cursor-pointer">ASSISTIR AGORA</button>
+    </div>
+
     <%= image_tag 'john.png' %>
 
   </div>
+
 </div>

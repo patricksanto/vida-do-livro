@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-  font-family: "Cheltenham";
-  src: url("/assets/fonts/CheltenhamBT.ttf");
+@layer base {
+  @font-face {
+    font-family: "Cheltenham";
+    src: url("/assets/fonts/CheltenhamBT.ttf");
+  }
 }
 
+@layer base {
+  @font-face {
+    font-family: "Nb";
+    src: url("/assets/fonts/NB International Regular WebfontarWebfont.ttf");
+  }
+}
 
-@font-face {
-  font-family: "Nb";
-  src: url("/assets/fonts/NBInternationalRegularWebfont.ttf");
+@layer base {
+  @font-face {
+    font-family: "Cheltenhm BdCn BT";
+    src: url("/assets/fonts/CheltenhamBT-BoldCondensed.ttf");
+  }
 }
