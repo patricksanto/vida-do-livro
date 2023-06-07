@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nb International", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 @layer base {
   @font-face {
     font-family: "Cheltenham";
@@ -9,16 +17,17 @@
   }
 }
 
-@layer base {
   @font-face {
-    font-family: "Nb";
-    src: url("/assets/fonts/NB International Regular WebfontarWebfont.ttf");
+    font-family: "Nb International";
+    src: url("/assets/fonts/NBInternationalRegularWebfontarWebfont.ttf");
   }
-}
 
-@layer base {
   @font-face {
     font-family: "Cheltenhm BdCn BT";
     src: url("/assets/fonts/CheltenhamBT-BoldCondensed.ttf");
   }
-}
+
+  @font-face {
+    font-family: "Windings 3";
+    src: url("/assets/fonts/Wingdings3.ttf");
+  }

@@ -2,31 +2,50 @@
 <div class="flex flex-col md:flex-row h-screen bg-black ">
 
   <%# Left side %>
-  <div class="text-primary m-10 space-y-2 flex flex-col justify-between w-3/5">
-    <div>
-      <div class="text-3xl font-alt text-secondary ml-2 mb-2"><span>VIDA DO LIVRO</span> <span>apresenta</span> </div>
-      <%= image_tag  'masterclass-inedita.png', class:'w-2/5 mb-2'%>
+  <div class="text-primary m-10 space-y-2 flex flex-wrap md:flex-col items-center justify-between md:w-3/5">
 
-      <h1 class="font-nb text-8xl pt-3 w-1/2 leading-[5rem]">O Futuro do Livro</h1>
-      <h2 class="font-nb text-4xl pt-3 w-3/5 leading-tight pr-10">A revolução digital no mundo das publicações</h2>
+    <div class="">
+      <div class="text-2xl md:text-3xl font-alt text-secondary text-center md:text-left md:ml-2 mb-2"><span>VIDA DO LIVRO</span> <span>apresenta</span> </div>
+      <%= image_tag  'masterclass-inedita.png', class:'w-4/5 md:w-2/5 mb-2 self-center'%>
+
+      <h1 class="font-nb text-7xl md:text-8xl text-center md:text-left pt-3 md:w-1/2 md:leading-[5rem]">O Futuro do Livro</h1>
+      <h2 class="font-nb text-3xl md:text-4xl text-center md:text-left pt-2 md:w-3/5 leading-tight md:pr-10">A revolução digital no mundo das publicações</h2>
     </div>
 
-    <p class="font-nb text-2xl font-thin text-secondary leading-tight w-1/2 justify-self-end">com <strong>John B. Thompson</strong>,</br>
-    um dos maiores especialistas em mercado
-    editorial do mundo, professor da Universidade
-    de Cambridge e autor dos livros Mercadores
-    de cultura e As guerras do livro.</p>
+    <p class="font-nb text-lg md:text-2xl text-center pt-4 md:text-left font-thin text-secondary leading-tight md:w-1/2 justify-self-end">
+      com <strong>John B. Thompson</strong>,</br>
+      um dos maiores especialistas em mercado
+      editorial do mundo, professor da Universidade
+      de Cambridge e autor dos livros <em>Mercadores</em>
+      de cultura e <em>As guerras do livro</em>.
+    </p>
+
   </div>
 
   <%# Right side %>
-  <div class="bg-primary flex flex-col px-10 pt-10 space-y-2 justify-between w-2/5">
+  <div class="bg-primary flex flex-col px-10 pt-10 space-y-2 justify-between md:w-2/5">
 
     <div class="flex flex-col space-y-2">
-      <h3 class="font-nb text-3xl tracking-wide w-80 text-center mb-4 self-center">Inscreva-se para liberar o acesso</h3>
-      <input type="text" placeholder="Nome" class="border border-black rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black w-100 flex-1">
-      <input type="text" placeholder="Email" class="border border-black rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black">
-      <button class="text-nb text-primary text-center bg-black py-5 px-4 rounded-3xl hover:bg-stone-800 transition-all hover:cursor-pointer">ASSISTIR AGORA</button>
+      <div>
+        <h3 class="block font-nb text-2xl md:text-3xl text-left tracking-wide w-3/5 md:w-80 md:text-center mb-4 self-center">Inscreva-se para liberar o acesso</h3>
+      </div>
+
+      <div class="flex items-center">
+
+        <div class="w-3/5 space-y-2">
+          <input type="text" placeholder="Nome" class="border border-black rounded-2xl md:rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black w-100 flex-1">
+          <input type="text" placeholder="Email" class="border border-black rounded-2xl md:rounded-3xl py-4 px-4 bg-transparent text-black font-extralight placeholder-black">
+        </div>
+
+        <div class="w-2/5">
+          <button class="hidden md:block text-nb text-primary text-center bg-black py-5 px-4 rounded-3xl hover:bg-stone-800 transition-all hover:cursor-pointer">ASSISTIR AGORA</button>
+          <button class="text-nb flex items-center text-primary text-center bg-black h-10 py-5 px-4 rounded-2xl md:rounded-3xl hover:bg-stone-800 transition-all hover:cursor-pointer">ASSISTIR</button>
+        </div>
+
+      </div>
+
     </div>
+
 
     <%= image_tag 'john.png' %>
 
