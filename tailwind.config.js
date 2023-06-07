@@ -10,11 +10,12 @@ module.exports = {
       fontFamily: {
         'nb': ['Nb International', 'Arial', 'sans-serif'],
         'alt': ['Cheltenhm BdCn BT', 'arial', 'serif'],
-        'greating': ['Greating', 'sans-serif'],
+        'win': ['Wingdings3', 'Arial', 'sans-serif'],
       },
       colors: {
         'primary': '#EFEDDF',
         'secondary': '#C4D6C9',
+        'tertiary': '#B9D7C6',
       },
     }
   }
